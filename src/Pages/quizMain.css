@@ -1,0 +1,124 @@
+.quiz-main-light, .quiz-main-dark{
+    display: flex;
+    padding: 10px;
+    min-height: 80vh;
+}
+
+.quiz-main-light{
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+}
+
+.quiz-main-dark{
+    background: rgb(41, 37, 37);
+    color: white;
+}
+
+
+.quiz-main-light .qm-main, .quiz-main-dark .qm-main{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.quiz-main-light .qm-qus, .quiz-main-dark .qm-qus{
+    max-width: 45vw;
+    font-size: 32px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.quiz-main-light .qm-options, .quiz-main-dark .qm-options{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 45vw;
+    gap: 15px;
+}
+
+@media (max-width:600px) {
+    .quiz-main-light .qm-main, .quiz-main-dark .qm-main{
+        flex-direction: column;
+    }
+    .quiz-main-light .qm-qus, .quiz-main-dark .qm-qus{
+        max-width: 90vw;
+        font-size: 24px;
+    }
+    .quiz-main-light .qm-options, .quiz-main-dark .qm-options{
+        max-width: 90vw;
+    }
+}
+
+
+.qm-buttons{
+    display: flex;
+    max-width: 45vw;
+    align-self: center;
+}
+
+.qm-buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: inherit;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.qm-buttons button:hover{
+    border: 1px solid white;
+}
+
+.quiz-main-dark .qm-buttons button{
+    color: white;
+}
+
+.option-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 250px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: inherit;
+    background: inherit;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.option-buttons:hover{
+    border: 1px solid white;
+}
+
+.quiz-main-light .qm-ans .ans-c, .quiz-main-dark .qm-ans .ans-c{
+    color:whitesmoke;
+    font-size: 24px;
+}
+
+.quiz-main-light .qm-ans .ans-i {
+    color: #791010;
+    font-size: 24px;
+}
+
+.quiz-main-light .qm-ans .ans-i span {
+    color: white;
+    font-size: 20px;
+}
+
+.quiz-main-dark .qm-ans .ans-i{
+    color: red;
+    font-size: 24px;
+}
+
+.quiz-main-dark .qm-ans .ans-i span{
+    color: white;
+    font-size: 20px;
+}
